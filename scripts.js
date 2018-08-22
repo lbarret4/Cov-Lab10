@@ -16,11 +16,11 @@ window.addEventListener('DOMContentLoaded', function () {
             let h3Text = document.createTextNode(`${friends[i]}:`);
             let lines = frSong[friends[i]];
 
-            div.setAttribute('class', 'friends');
+            divContainer.appendChild(div);
+            div.setAttribute('class', 'friends border border-secondary rounded');
             h3.appendChild(h3Text);
             div.appendChild(h3);
-            divContainer.appendChild(div);
-            document.body.appendChild(div);
+
 
 
             for (let j = 1; j < frSong[friends[0]].length; j++) {

@@ -1,8 +1,11 @@
 let friends = ['Charles', 'Jemma', 'Kim', 'Amanda', 'Kenji'];
 
-for (friend of friends) {
-    createSong(friend);
+function printSong(names){
+    for (name of names) {
+        createSong(name);
+    }
 }
+
 function createSong(name) {
     for (i = 99; i > 0; i--) {
         switch (i) {
